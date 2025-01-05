@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5dc; /* Warna latar belakang krem lembut */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Tinggi minimum layar penuh */
+        }
+        .container.mt-5 {
+            padding-top: 30px;
+            flex-grow: 1; /* Konten utama memenuhi ruang yang tersisa */
+        }
+        .navbar {
+            background-color: #8cbf88; /* Warna navbar hijau sage */
+        }
+        .navbar a {
+            color: #ffffff; /* Warna teks link menjadi putih untuk kontras */
+        }
+        .navbar a:hover {
+            color: #d7e8d3; /* Warna teks navbar saat hover */
+        }
+        .card {
+            border: 2px solid #a3c9a8; /* Border hijau lembut untuk kartu */
+        }
+        .card-body {
+            background-color: #faf7f0; /* Warna latar belakang kartu krem pucat */
+        }
+        h1 {
+            color: #5a6e5c; /* Warna teks judul hijau gelap */
+            margin: 10px 0;
+        }
+        .greeting {
+            font-weight: bold; /* Tebal */
+            margin-bottom: 10px;
+        }
+        .sub-title {
+            margin-top: 0; /* Menghilangkan margin atas */
+            margin-bottom: 30px;
+        }
+        .btn-danger {
+            background-color: #8cbf88; /* Warna tombol hijau sage */
+            border-color: #6fa06e; /* Border tombol berwarna hijau lebih gelap */
+        }
+        .btn-danger:hover {
+            background-color: #6fa06e; /* Warna tombol saat hover */
+        }
+        footer {
+            background-color: #8cbf88; /* Warna footer hijau sage */
+            color: #ffffff; /* Warna teks putih */
+            text-align: center; /* Pusatkan teks */
+            padding: 20px 0; /* Padding atas dan bawah */
+            width: 100%; /* Pastikan footer selebar layar */
+            position: relative; /* Tidak mengganggu konten lain */
+            left: 0;
+            right: 0;
+            margin-top: auto; /* Footer diposisikan di bawah */
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" style="font-size: 10 rem; font-weight: bold;" href="index.html"> Najwa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5" style="padding-top: 10px;">
+        <h1 class="text-center greeting" id="greeting" style="margin-top: -30px;"></h1>
+        <h1 class="text-center" style="font-size: 2.5rem; font-weight: bold; color: #5a6e5c;">Lihat karya saya di sini!</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="barista.jpg" class="card-img-top" alt="Proyek 2" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelatihan Barista</h5>
+                        <p class="card-text">Dalam foto ini saya sedang praktek menggrinder kopi, untuk memastikan tekstur kopi itu halus atau kasar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="kopi.jpg" class="card-img-top" alt="Proyek 2" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kopi Bubuk Robusta dan Arabika</h5>
+                        <p class="card-text">Kopi bubuk ini adalah hasil produksi kedai saya, Setiap butir kopi dipilih dengan cermat untuk 
+                            menjaga cita rasa serta aroma khasnya. Cocok untuk dinikmati kapan saja!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="art 2 .jpg" class="card-img-top" alt="Latte Art" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Latte Art</h5>
+                        <p class="card-text">Ini adalah latte art pertama kali saya yang berhasil, sebelumnya pernah bikin tapi gagal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="about.html" class="btn btn-secondary">Kembali</a>
+                <a href="contact.html" class="btn btn-secondary">Selanjutnya</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Najwa Mahdewi Syahita.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="greeting.js"></script>
+</body>
+</html>

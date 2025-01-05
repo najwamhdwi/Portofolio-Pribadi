@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5dc; /* Warna latar belakang krem lembut */
+        }
+        .navbar {
+            background-color: #8cbf88; /* Warna navbar hijau sage */
+        }
+        .navbar a {
+            color: #ffffff; /* Warna teks link menjadi putih untuk kontras */
+        }
+        .navbar a:hover {
+            color: #d7e8d3; /* Warna teks navbar saat hover */
+        }
+        .card {
+            border: 2px solid #a3c9a8; /* Border hijau lembut untuk kartu */
+        }
+        .card-body {
+            background-color: #faf7f0; /* Warna latar belakang kartu krem pucat */
+        }
+        h1 {
+            color: #5a6e5c; /* Warna teks judul hijau gelap */
+            margin: 10px 0;
+        }
+        .greeting {
+            font-weight: bold; /* Tebal */
+            margin-bottom: 10px;
+        }
+        .sub-title {
+            margin-top: 0; /* Menghilangkan margin atas */
+            margin-bottom: 30px;
+        }
+        .btn-danger {
+            background-color: #8cbf88; /* Warna tombol hijau sage */
+            border-color: #6fa06e; /* Border tombol berwarna hijau lebih gelap */
+        }
+        .btn-danger:hover {
+            background-color: #6fa06e; /* Warna tombol saat hover */
+        }
+        footer {
+            background-color: #8cbf88; /* Warna footer sesuai dengan navbar */
+            color: #ffffff; /* Warna teks footer putih */
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" style="font-size: 10 rem; font-weight: bold;" href="index.html"> Najwa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5" style="padding-top:20px;">
+        <h1 class="text-center greeting" id="greeting"></h1>
+        <h1 class="text-center" style="font-size: 2.5rem; font-weight: bold; color: #5a6e5c;">Yuk, kenalan lebih dekat</h1>
+        <div class="row mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card p-3">
+                    <h3 class="mb-3">Tentang Saya</h3>
+                    <p>Nama saya Najwa Mahdewi Syahita, biasa dipanggil Najwa atau Wawa. Saya lahir di Kota Kendal pada 6 September 2005 dan menyelesaikan pendidikan di SMK Bina Utama Kendal.</p>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card p-3">
+                    <h3 class="mb-3">Pengalaman</h3>
+                    <ul class="list-unstyled">
+                        <li>Pengalaman saya adalah pernah ikut pelatihan barista, aktif mengikuti organisasi OSIS saat SMP dan SMK, 
+                            mengikuti lomba paskibra dan lomba pramuka pada saat SMP, serta ikut pelatihan service HP Evercoss pada saat SMK,
+                            dan magang di konter service HP.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card p-3">
+                    <h3 class="mb-3">Keterampilan</h3>
+                    <ul class="list-unstyled">
+                        <li>Kerja Tim</li>
+                        <li>Manajemen Kegiatan</li>
+                        <li>Disiplin dan Tanggung Jawab</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4">
+        <a href="index.html" class="btn btn-secondary">Kembali</a>
+        <a href="gallery.html" class="btn btn-secondary">Selanjutnya</a>
+    </div>
+</div>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Najwa Mahdewi Syahita</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="greeting.js"></script>
+</body>
+</html>
